@@ -1,0 +1,49 @@
+.header {
+  
+  padding: 1.25rem 1.5rem;
+
+  &__menu { // Mobile menu
+
+    margin-top: .3125rem;
+    margin-right: 1rem;
+
+    > span {
+      display: block;
+      width: 16px;
+      height: 3px;
+      background-color: $darkGrayishBlue;
+      
+      &:not(:last-child) {
+        margin-bottom: .1875rem;
+      }
+    }
+
+  }
+
+  &__logo {
+
+    img{
+      width: 8.625rem;
+    }
+
+  }
+
+  &__links {
+    a {
+      font-size: $font-sm;
+    }
+  }
+
+  &__cart {
+    img {
+      width: 1.25rem;
+      margin-right: 1.375rem;
+    }
+  }
+
+  &__user-avatar {
+    img {
+      width: 1.5625rem;
+    }
+  }
+}
