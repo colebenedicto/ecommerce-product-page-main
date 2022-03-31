@@ -46,8 +46,21 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header {
-  padding: 1.25rem 1.5rem;
+  padding: 1.75rem 10.3125rem 2.125rem;
+  border-bottom: #b6bcc8 0.0625rem solid;
 }
 
 .header__menu {
@@ -70,16 +83,30 @@ a, a:visited, a:hover {
   width: 8.625rem;
 }
 
+.header__links {
+  margin-left: 3.5rem;
+}
+
 .header__links a {
   font-size: 0.75rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 2.125rem;
+}
+
+.header__links a:hover {
+  color: #1d2025;
 }
 
 .header__cart img {
-  width: 1.25rem;
-  margin-right: 1.375rem;
+  width: 1.5rem;
+  margin-right: 2.875rem;
 }
 
 .header__user-avatar img {
-  width: 1.5625rem;
+  width: 3.25rem;
 }
 /*# sourceMappingURL=style.css.map */
